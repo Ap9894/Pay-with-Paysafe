@@ -117,7 +117,7 @@
 				
 				$.ajax({
 					type: "POST",
-					url: 'http://localhost:8080/createToken',
+					url: 'http://3.129.149.145:8080/createToken',
 					contentType: "application/json",
                         		data: JSON.stringify({'email': email,'phone':phone,'firstName':firstName}),
 					success: function(result){
@@ -196,7 +196,7 @@
                                         	$.ajax({
 							
                               				type: "POST",
-                              				url: 'http://localhost:8080/payment',
+                              				url: 'http://3.129.149.145:8080/payment',
                               				contentType: "application/json",
                               				data: JSON.stringify({'paymentHandleToken': result.paymentHandleToken,'amount':result.amount}),
 							
