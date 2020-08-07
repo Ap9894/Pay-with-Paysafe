@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<a href="#">ROIIM ASSIGNMENT</a>
+<a href="#">Pay with Paysafe</a>
 
 </br>
 <div class="container">
@@ -209,8 +209,8 @@
 
                             }
                             else{
-                                //console.log("ok1");
-                                instance.showFailureScreen("Payment was declined. Try again with the same or another payment method.");
+
+                                instance.showFailureScreen("Payment Not Successful. Try again !!!");
 
                             }
 
@@ -233,7 +233,7 @@
                 }
                 else {
                     console.log("error");
-                    alert("Error Message -----"+error.detailedMessage)
+                    alert("Error Message -----"+error.Message)
                     console.error(error);
 
                 }
@@ -247,6 +247,9 @@
                     case "PAYMENT_HANDLE_PAYABLE": // Handle the scenario
                     default: // Handle the scenario
                 }
+                // if(expired){
+                //     // show an expired page
+                // }
             });
     }
 </script>
